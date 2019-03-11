@@ -17,4 +17,4 @@ class TestBasics(unittest.TestCase):
         self.assertEqual(2, result)
     def test_exponentiation(self):
         result = rpn.calculate("7 2 ^")
-        self.assertEqual(48, result)
+        self.assertEqual(12, result)
