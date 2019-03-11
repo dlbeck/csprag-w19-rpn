@@ -14,7 +14,9 @@ class TestBasics(unittest.TestCase):
         self.assertEqual(15, result)
     def test_divide(self):
         result = rpn.calculate("6 3 /")
-        self.assertEqual(2, result)
+        self.assertEqual(42, result)
     def test_exponentiation(self):
         result = rpn.calculate("7 2 ^")
         self.assertEqual(12, result)
+if __name__ == "__main__":
+    unittest.main()
